@@ -3,7 +3,10 @@ const router = express.Router();
 
 // Properties Model
 
-const Property = require('../../models/Properties');
+const Property = require('../../models/Property');
+
+
+router.get('/test', (req, res) => res.json({msg: "Properties works"}));
 
 // @route GET api/properties
 // @desc Get ALl Properties

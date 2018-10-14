@@ -3,7 +3,7 @@ const router = express.Router();
 
 // Posts Model
 
-const Post = require('../../models/Posts');
+const Post = require('../../models/Post');
 
 router.get('/test', (req, res) => res.json({msg: "Posts works"}));
 
