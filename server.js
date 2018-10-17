@@ -39,6 +39,6 @@ app.use('/api/companies', companies)
 
 
 app.listen(PORT, () => {
-  console.log(`Seerver running on port ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
 
