@@ -40,7 +40,7 @@ app.use('/api/companies', companies)
 
 // Server static assets if in production
 if (process.env.NODE_ENV === 'production') {
-  app.user(express.static('/client/build'));
+  app.use(express.static('/client/build'));
 
   app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
