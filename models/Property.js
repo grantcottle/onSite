@@ -1,5 +1,5 @@
-const mongoos = require('mongoose');
-const Schema = mongoos.Schema;
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
 // Create Schema
 const PropertySchema = new Schema({
@@ -7,10 +7,14 @@ const PropertySchema = new Schema({
         type: String,
         required: true
     },
+    company: {
+        type: Schema.Types.ObjectId,
+        ref: 'company'
+      },
     date: {
         type: Date,
         default: Date.now
     }
 });
 
-module.exports = Property = mongoos.model('property', PropertySchema);
+module.exports = Property = mongoose.model('property', PropertySchema);

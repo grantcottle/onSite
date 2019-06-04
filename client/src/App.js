@@ -9,7 +9,7 @@ import { Provider } from 'react-redux';
 import store from './store';
 
 import PrivateRoute from './components/common/PrivateRoute';
-
+import Sidenav from './components/layout/Sidenav';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Landing from './components/layout/Landing';
@@ -55,9 +55,16 @@ class App extends Component {
       <Provider store={store}>
         <Router>
           <div className="App">
+    
             <Navbar />
+            <Sidenav />
+            
             <Route exact path="/" component={Landing} />
-            <div className="container">
+            <div className="container-fluid">
+            <div className="row">
+              
+            
+            
               <Route exact path="/register" component={Register} />
               <Route exact path="/login" component={Login} />
               <Route exact path="/profiles" component={Profiles} />
@@ -108,6 +115,7 @@ class App extends Component {
                 />
               </Switch>
               <Route exact path="/not-found" component={NotFound} />
+              </div>
             </div>
             <Footer />
           </div>

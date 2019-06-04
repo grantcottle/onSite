@@ -25,7 +25,7 @@ class Landing extends Component {
                 </p>
                 <hr />
                 <Link to="/register" className="btn btn-lg btn-info mr-2">
-                  Sign Up
+                  CREATE ACCOUNT
                 </Link>
                 <Link to="/login" className="btn btn-lg btn-light">
                   Login

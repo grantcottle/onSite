@@ -18,12 +18,6 @@ const UserSchema = new Schema({
     avatar: {
         type: String
     },
-    company: {
-        type: String,
-    },
-    permissions: {
-        type: String,
-    },
     date: {
         type: Date,
         default: Date.now
