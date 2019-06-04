@@ -57,7 +57,7 @@ class App extends Component {
           <div className="App">
     
             <Navbar />
-            <Sidenav />
+            {/* <Sidenav /> */}
             
             <Route exact path="/" component={Landing} />
             <div className="container-fluid">
