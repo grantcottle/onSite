@@ -21,7 +21,7 @@ class Landing extends Component {
                 <h1 className="display-3 mb-4">OnSite</h1>
                 <p className="lead">
                   {' '}
-                  Create a Property Management profile/portfolio
+                  Create a profile/portfolio
                 </p>
                 <hr />
                 <Link to="/register" className="btn btn-lg btn-info mr-2">
